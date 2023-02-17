@@ -3,7 +3,7 @@
 /**
  * main - Prints number
  * @void: main has no arguments
- * Description: Prints number using putchar(putchar outputs char but to print integer, we use putchar('0' + n) where n is integer to be converted. putchar will inteprete '0' to ASCII code then add the number to get integer equivalent
+ * Description: Prints number we use putchar('0' + n)
  * Return: Always 0 (Success)
  */
 int main(void)
