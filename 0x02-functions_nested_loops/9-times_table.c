@@ -19,14 +19,17 @@ void times_table(void)
 			else if (a == 0)
 			{
 				_putchar((b - 1) + '0');
+				_putchar(32);
 			}
 			else if (b == 0)
 			{
 				_putchar((a - 1) + '0');
+				_putchar(32);
 			}
 			else
 			{
 				_putchar(((a - 1) * (b - 1)) + '0');
+				_putchar(32);
 			}
 		}
 		_putchar('\n');
