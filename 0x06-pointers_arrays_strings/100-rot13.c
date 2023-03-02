@@ -13,13 +13,16 @@ char *rot13(char *str)
 
 	while (x != '\0')
 	{
-		if ((x >= 'A' && x <= 'M') || (x >= 'a' && x <= 'm'))
+		while ((x >= 'A' && x <= 'Z') || (x >= 'a' && x <= 'z'))
 		{
+			if ((x > 'M' && x <= 'Z') || (x > 'm' && x <= 'z'))
+			{
+				x -= 13;
+				break;
+			}
+			
 			x += 13;
-		}
-		else if ((x >= 'N' && x <= 'Z') || (x >= 'n' && x <= 'z'))
-		{
-			x -= 13;
+			break;
 		}
 
 		len++;
