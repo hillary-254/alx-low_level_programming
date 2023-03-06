@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		slen = 0;
 
-		while (s[slen])
+		while (s[slen] != 32)
 		{
 			if (accept[alen] == s[slen])
 			{
