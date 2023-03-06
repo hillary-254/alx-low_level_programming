@@ -19,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[alen] == s[slen])
 			{
-				s += alen;
+				s += slen;
 				return (s);
 			}
 			alen++;
