@@ -9,7 +9,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int slen = 0, alen;
+	int slen = 0, alen;
 
 	while (s[slen])
 	{
