@@ -8,7 +8,7 @@
 
 char *_strdup(char *str)
 {
-	int size = 1, int y = 0;
+	int size = 1, y = 0;
 	char *st;
 
 	if (str == NULL)
@@ -27,9 +27,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (y = 0; y < size; y++)
+	while (y < size)
 	{
 		st[y] = str[y];
+		y++;
 	}
 
 	st[y] = '\0';
