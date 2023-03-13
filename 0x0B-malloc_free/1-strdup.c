@@ -8,21 +8,20 @@
 
 char *_strdup(char *str)
 {
-	int size = 0, int y = 0;
+	int size = 1, int y = 0;
 	char *st;
 
-	while (*str != '\0')
-	{
-		size++;
-		str++;
-	}
-
-	if (size == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	st = malloc(sizeof(char) * size);
+	while (str[size])
+	{
+		size++;
+	}
+
+	st = malloc((sizeof(char) * size) + 1);
 
 	if (st == NULL)
 	{
