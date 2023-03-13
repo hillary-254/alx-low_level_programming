@@ -14,9 +14,10 @@ char *_strdup(char *str)
 	while (*str != '\0')
 	{
 		size++;
+		str++;
 	}
 
-	if (size == NULL)
+	if (size == 0)
 	{
 		return (NULL);
 	}
