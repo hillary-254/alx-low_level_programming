@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	int (*calc)(int, int);
+	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	calc = get_op_func(argv[2]);
+	oprt = get_op_func(argv[2]);
 
-	if (!calc)
+	if (!oprt)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", calc(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
