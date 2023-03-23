@@ -17,10 +17,10 @@ void print_a_char_ptr(char *separator, va_list args);
  * @identifier: The conversion specifier
  * @f: The function pointer
  */
-//typedef struct format_types
-//{
-//	char *identifier;
-//	void (*f)(char *separator, va_list args);
-//} f_dt;
+typedef struct format_types
+{
+	char *identifier;
+	void (*f)(char *separator, va_list args);
+} f_dt;
 
 #endif
