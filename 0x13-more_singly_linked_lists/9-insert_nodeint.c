@@ -43,7 +43,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	/*if index is out of range/loop reaches end without desired position*/
 	if (count < idx || curr_n == NULL)
-		return (NULL);
+		free(new_n);
 	/*assigns the new node to the desired position*/
 	prev_n->next = new_n;
 	new_n->next = curr_n;
