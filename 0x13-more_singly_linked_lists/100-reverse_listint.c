@@ -15,16 +15,18 @@ listint_t *reverse_listint(listint_t **head)
 	if ((*head)->next == NULL || *head == NULL)
 		return (*head);
 
+	prev_n = *head;
+	curr_n = (*head)->next;
+	prev_n->next = NULL;
+
 	/*while node does not point to null, we reverse through while loop*/
-	while (*head != NULL)
+	while (curr_n != NULL)
 	{
-		curr_n = (*head)->next;
+		*head = curr_n;
+		curr_n = curr_n->next;
 		(*head)->next = prev_n;
 		prev_n = *head;
-		*head = curr_n;
 	}
-
-	*head = curr_n;
 
 	return (*head);
 }
