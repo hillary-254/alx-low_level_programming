@@ -12,7 +12,7 @@ listint_t *reverse_listint(listint_t **head)
 	listint_t *prev_n, *curr_n = NULL;
 
 	/*checks if the list is empty or has only one node*/
-	if ((*head)->next == NULL || head == NULL)
+	if ((*head)->next == NULL || *head == NULL)
 		return (*head);
 
 	/*while node does not point to null, we reverse through while loop*/
