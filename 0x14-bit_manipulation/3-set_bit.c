@@ -14,5 +14,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 /*performs bitwise or and if it fails returns an error(-1) */
 	else
-		return ((*n | 1UL << index) ? 1 : -1);
+		return ((*n | 1 << index) ? 1 : -1);
 }
