@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+#define BUF_SIZE 1024
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/stat.h>
