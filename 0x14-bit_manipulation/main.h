@@ -2,6 +2,8 @@
 #define MAIN_H
 
 #include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int _putchar(int c);
 unsigned int binary_to_uint(const char *b);
