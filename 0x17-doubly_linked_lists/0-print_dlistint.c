@@ -3,7 +3,6 @@
 /**
  * print_dlistint - Prints all the elements of a double linked list
  * @h: The double linked list to print
- *
  * Return: The number of nodes in the double linked list
  */
 size_t print_dlistint(const dlistint_t *h)
@@ -14,8 +13,9 @@ size_t print_dlistint(const dlistint_t *h)
 	while (curr != NULL)
 	{
 		printf("%d\n", curr->n);
+		++counter;
 		curr = curr->next;
-		counter++;
+		
 	}
 	return (counter);
 }
